@@ -306,6 +306,11 @@
             </li>
           </ul>
         </address>
+        <div class="div-hamburger">
+          <svg height="24" width="24" class="hamburger">
+            <use href="./images/icons.svg#hamburger"></use>
+          </svg>
+        </div>
       </div>
     </header>
 
@@ -313,7 +318,7 @@
       <section class="section-first">
         <div class="container heading-one">
           <h1 class="title-first">
-            Effective Solutions<br />
+            Effective Solutions <br />
             for Your Business
           </h1>
 
@@ -383,8 +388,9 @@
           <ul class="team" style="list-style-type: none">
             <li class="card">
               <img
-                src="./images/img(2)(1).jpg"
-                alt="man in a blue shirt, short dark hair and short dark beard"
+                srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
+                src="./images/mark.jpg"
+                alt="a man in a blue shirt, short dark hair and short dark beard"
                 width="264"
                 height="260"
               />
@@ -425,8 +431,9 @@
             </li>
             <li class="card">
               <img
+                srcset="./images/img(1)(1).jpg 1x, ./images/img(1)(1)@2x.jpg 2x"
                 src="./images/img(1)(1).jpg"
-                alt="man in a blue shirt, short hair and short stubble"
+                alt="a man in a blue shirt, short hair and short stubble"
                 width="264"
                 height="260"
               />
@@ -467,8 +474,9 @@
             </li>
             <li class="card">
               <img
+                srcset="./images/img(4).jpg 1x, images/img(4)@2x.jpg 2x"
                 src="./images/img(4).jpg"
-                alt="woman in a pink sweater, with dark brown eyes and long dark hair"
+                alt="a woman in a pink sweater, with dark brown eyes and long dark hair"
                 width="264"
                 height="260"
               />
@@ -509,8 +517,9 @@
             </li>
             <li class="card">
               <img
+                srcset="./images/img(3)(1).jpg 1x, ./images/img(3)(1)@2x.jpg 2x"
                 src="./images/img(3)(1).jpg"
-                alt="man in a gray t-shirt, brown hair and dark stubble"
+                alt="a man in a gray t-shirt, brown hair and dark stubble"
                 width="264"
                 height="260"
               />
@@ -559,11 +568,13 @@
             <li class="portfolio-item">
               <div class="box">
                 <img
+                  class="bankapp"
+                  srcset="./images/bankapp.jpg 1x, ./images/bankapp@2x.jpg 2x"
                   src="./images/bankapp.jpg"
                   alt="white and purple appearance of the
               BankApp mobile application"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="280"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -579,10 +590,12 @@
             <li class="portfolio-item">
               <div class="box">
                 <img
+                  class="cashless"
+                  srcset="./images/cashless.jpg 1x, ./images/cashless@2x.jpg 2x"
                   src="./images/cashless.jpg"
                   alt="picture of making a cashless transaction via phone"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="280"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -598,10 +611,15 @@
             <li class="portfolio-item">
               <div class="box">
                 <img
+                  class="meditation"
+                  srcset="
+                    ./images/meditation.jpg    1x,
+                    ./images/meditation@2x.jpg 2x
+                  "
                   src="./images/meditation.jpg"
                   alt="computer and phone displaying meditation apps on their screens"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="280"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -617,10 +635,12 @@
             <li class="portfolio-item">
               <div class="box">
                 <img
+                  class="taxi"
+                  srcset="./images/taxi.jpg 1x, ./images/taxi@2x.jpg 2x"
                   src="./images/taxi.jpg"
                   alt="driver's hands in black gloves on the steering wheel of the car"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="280"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -636,10 +656,12 @@
             <li class="portfolio-item">
               <div class="box">
                 <img
+                  class="screen"
+                  srcset="./images/screen.jpg 1x, ./images/screen@2x.jpg 2x"
                   src="./images/screen.jpg"
                   alt="examples of purple, blue and yellow moon graphics for the phone"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="280"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -655,10 +677,12 @@
             <li class="portfolio-item">
               <div class="box">
                 <img
+                  class="online"
+                  srcset="./images/online.jpg 1x, ./images/online@2x.jpg 2x"
                   src="./images/online.jpg"
                   alt="girl in sweater, sunglasses and gray hat with headphones"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="280"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -743,7 +767,72 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="menu-popup-section is-hidden">
+      <div class="popup-container">
+        <button type="button" class="close-btn" id="close">
+          <svg height="8" width="8" class="icon-close">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="popup-menu-nav-list">
+          <li>
+            <a class="popup-menu-nav-link" href="./index.html">Studio</a>
+          </li>
+          <li><a class="popup-menu-nav-link" href="">Portfolio</a></li>
+          <li><a class="popup-menu-nav-link" href="">Contacts</a></li>
+        </ul>
+
+        <address class="popup-menu-contacts">
+          <ul class="popup-menu-contact-list">
+            <li>
+              <a
+                class="popup-menu-contact-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="popup-menu-contact-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="social-media-footer-ul">
+          <li class="social-media-footer-item" style="list-style-type: none">
+            <a class="elipse" href="">
+              <svg width="24" height="24" class="icon">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media-footer-item" style="list-style-type: none">
+            <a class="elipse" href="">
+              <svg width="24" height="24" class="icon">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media-footer-item" style="list-style-type: none">
+            <a class="elipse" href="">
+              <svg width="24" height="24" class="icon">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media-footer-item" style="list-style-type: none">
+            <a class="elipse" href="">
+              <svg width="24" height="24" class="icon">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="close-btn" id="close">
           <svg height="8" width="8" class="icon-close">
